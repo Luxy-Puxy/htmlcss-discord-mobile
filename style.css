@@ -1,0 +1,140 @@
+/* General Reset & Body Styles */
+body {
+    background-color: #404eed; /* Discord Classic Blue */
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Mobile Wrapper (Limits width to 512px as requested) */
+.mobile-wrapper {
+    width: 100%;
+    max-width: 512px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header & Logo */
+.header {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 35px;
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Intro Text Section */
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-family: 'Sigmar', cursive;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #dcddde;
+    margin-bottom: 24px;
+}
+
+/* Buttons Container & Styles */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #23272a;
+}
+
+.btn-blue {
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
+/* Cards with Floating Icons (Position Absolute / Relative Trick) */
+.card-wrapper {
+    position: relative; /* Crea el anclaje para que el icono absoluto se guíe por aquí */
+    width: 100%;
+    margin-top: 60px;   /* Deja espacio arriba para que el icono flote fuera de la tarjeta */
+    margin-bottom: 30px;
+}
+
+.discord-card {
+    background-color: #5865f2;
+    border-radius: 32px;
+    padding: 40px 24px 24px 24px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.floating-icon {
+    position: absolute;
+    top: -35px;                  /* Saca el icono hacia arriba fuera del borde de la tarjeta */
+    left: 50%;                   /* Lo empuja hacia el centro horizontal */
+    transform: translateX(-50%); /* Centrado matemático perfecto */
+    width: 70px;                 /* Tamaño controlado para el icono 3D */
+}
+
+.card-title {
+    font-family: 'Sigmar', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dcddde;
+    margin-bottom: 20px;
+}
+
+.card-preview-image {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
